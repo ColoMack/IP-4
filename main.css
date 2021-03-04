@@ -22,6 +22,7 @@ h1{
   word-wrap: break-word;
   font-family: "PT Sans Narrow";
   text-align: center;
+  letter-spacing: 10px;
 }
 
 .hero-image{
@@ -41,6 +42,19 @@ h1{
   text-align: right;
   padding-right: 40px;
   padding-top: 300px;
-  font-size: large;
+  font-size: 50px;
+}
+
+.h2{
+  color: white;
+  font-weight: 20px;
+  margin-top: 0;
+  margin-bottom: 35px;
   font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-family: "PT Sans Narrow";
+  letter-spacing: 8px;
+  font-size: 70px;
+  line-height: 40px;
 }
