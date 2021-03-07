@@ -93,7 +93,9 @@ h2{
 .col2{
   width: 500px;
 }
-
+.center{
+  text-align: center;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -138,6 +140,20 @@ h2{
   color: white;
   transform: rotateY(180deg);
 }
-.flip-card{
-  float: right;
+.col-md-4{
+  border-radius: 10%;
+  padding: 10px;
+  position: relative;
+}
+.menu-1,
+.menu-2,
+.menu-3{
+  width: 220px;
+  height: 220px;
+}
+#home{
+  background-color:#252c30 ;
+}
+.description{
+  font-size: 20px;
 }
