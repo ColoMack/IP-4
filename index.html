@@ -136,39 +136,40 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-6">
-          <form id="pizza-size">
-              <label for="size">Pizza Size</label>
-              <select class="form-control" id="size">
-                  <option selected value="">Select size here</option>
-                  <option value="large">Small -- Ksh.500</option>
-                  <option value="medium">Medium -- Ksh.800</option>
-                  <option value="small">Small -- Ksh.1000</option>
-              </select>
+    <div class="col-md-6">
+      <form id="pizza">
+
+        <label for="size">Pizza Size</label>
+          <select class="form-control" id="size">
+            <option selected value="">Select size here</option>
+              <option value="small">Small -- Ksh.500</option>
+              <option value="medium">Medium -- Ksh.800</option>
+              <option value="large">Large -- Ksh.1000</option>
+           </select>
 
               <br>
 
-              <label for="size">Select one of ARINGO hand-made crusts</label>
-              <select class="form-control" id="crust">
-                  <option selected value="">Select crust here</option>
-                  <option value="crispy"> Thin crust -- Ksh.300</option>
-                  <option value="stuffed">Broklyn style -- Ksh.500</option>
-                  <option value="glutten-free">The ARINGO special -- 700</option>
-              </select>
+        <label for="size">Select one of ARINGO hand-made crusts</label>
+          <select class="form-control" id="crust">
+             <option selected value="">Select crust here</option>
+            <option value="thin"> Thin crust -- Ksh.300</option>
+            <option value="broklyn">Broklyn style -- Ksh.500</option>
+            <option value="glutten-free">The ARINGO special -- 700</option>
+          </select>
 
               <br>
 
-              <label for="toppings">Include the toppings you wish to have</label>
-              <div class="form-group top">
-                  <input type="checkbox" name="topping" value="broccoli"> Broccoli
-                  <input type="checkbox" name="topping" value="sausage"> Sausage
-                  <input type="checkbox" name="topping" value="black-olives"> Black Olives 
-                  <input type="checkbox" name="topping" value="gorgonzola"> Gorgonzola
-              </div>
+        <label for="toppings">Include the toppings you wish to have</label>
+          <div class="form-group top">
+             <input type="checkbox" name="topping" value="broccoli"> Broccoli
+             <input type="checkbox" name="topping" value="sausage"> Sausage
+             <input type="checkbox" name="topping" value="black-olives"> Black Olives 
+             <input type="checkbox" name="topping" value="gorgonzola"> Gorgonzola
+          </div>
 
               <br>
 
-            <button type="submit" class="btn btn-outline-success button2">Add to Cart  <i class="fas fa-shopping-cart"></i></button>
+          <button type="submit" class="btn btn-outline-success button2">Add to Cart  <i class="fas fa-shopping-cart"></i></button>
           </form>
         </div>
 
@@ -176,7 +177,7 @@
           <div class="cart">
               <div id="show-cart">
                 <h2>Cart Checkout</h2>
-                <h4>Total: Ksh.<span class="total-cart"></span></h4>
+                <h4>Total: Ksh.<span class="total"></span></h4>
               </div>
               <div>
                   <ol id="cart">
@@ -233,7 +234,22 @@
 </div>
 
 
-
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Message Received</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-body">
+           ...
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+          </div>
+    </div>
+  </div>
+</div>
 <script src="main.js"></script>
 <script src="css/js/bootstrap.min.js"></script>
 <script src="css/js/jquery-3.5.1.js"></script>

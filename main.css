@@ -78,7 +78,8 @@ h2{
   font-size: 100px;
   letter-spacing: 5px;
 }
-.button{
+.button,
+.button2{
   background-color: rgb(245, 147, 35);
   border: none;
   color: white;
