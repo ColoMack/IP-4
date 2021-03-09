@@ -132,5 +132,111 @@
 <div class="order-here">
     <a class="button" href="#order">Start your Order here</a>
 </div>
+<br>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <form id="pizza-size">
+              <label for="size">Pizza Size</label>
+              <select class="form-control" id="size">
+                  <option selected value="">Select size here</option>
+                  <option value="large">Small -- Ksh.500</option>
+                  <option value="medium">Medium -- Ksh.800</option>
+                  <option value="small">Small -- Ksh.1000</option>
+              </select>
+
+              <br>
+
+              <label for="size">Select one of ARINGO hand-made crusts</label>
+              <select class="form-control" id="crust">
+                  <option selected value="">Select crust here</option>
+                  <option value="crispy"> Thin crust -- Ksh.300</option>
+                  <option value="stuffed">Broklyn style -- Ksh.500</option>
+                  <option value="glutten-free">The ARINGO special -- 700</option>
+              </select>
+
+              <br>
+
+              <label for="toppings">Include the toppings you wish to have</label>
+              <div class="form-group top">
+                  <input type="checkbox" name="topping" value="broccoli"> Broccoli
+                  <input type="checkbox" name="topping" value="sausage"> Sausage
+                  <input type="checkbox" name="topping" value="black-olives"> Black Olives 
+                  <input type="checkbox" name="topping" value="gorgonzola"> Gorgonzola
+              </div>
+
+              <br>
+
+            <button type="submit" class="btn btn-outline-success button2">Add to Cart  <i class="fas fa-shopping-cart"></i></button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div class="cart">
+              <div id="show-cart">
+                <h2>Cart Checkout</h2>
+                <h4>Total: Ksh.<span class="total-cart"></span></h4>
+              </div>
+              <div>
+                  <ol id="cart">
+  
+                  </ol>
+              </div>
+              <div id="pick-pizza">
+                  <p id="pizzaPick">
+                      <ul>
+                          <li>Size: <span class="size"></span></li>
+                          <li>Crust: <span class="crust"></span></li>
+                          <li>Toppings: <span class="toppings"></span></li>
+                          <li>Cost: Ksh.<span class="cost"></span></li>
+                      </ul>
+                  </p>
+              </div>
+              <button class="btn btn-outline-danger button2" id="checkout" >Checkout</button>
+              </div>
+
+              <div class="pickup-delivery">
+                  <h4>Select a delivery Method</h4>
+                  <p><strong>Pickup Station </strong>Ready for pickup immediately after placing an order</p>
+                  <button type="button" class="btn btn-outline-primary button2" id="pickup">Pickup Station</button>
+                  <p><strong>Express Delivery </strong> We offer express delivery within Nairobi at a cost of ksh.300</p>
+                  <button type="button" class="btn btn-outline-primary button2" id="delivery">Delivery to your home or office  <i class="fas fa-truck"></i></button>
+              </div>
+
+              <div class="pick-up">
+                  <form id="pick-up-name">
+                      <div class="form-group">
+                          <label for="name">Enter the full name of the person picking up the order</label>
+                          <input type="text" placeholder="Name" class="form-control text-input" id="pick-upName">
+                      </div>
+                      <button type="submit" class="btn btn-outline-success button2" id="button-pickup">Submit</button>
+                  </form>
+                  <a href="index.html" class="button">Home <i class="fas fa-home"></i></a>
+              </div>
+
+              <div class="delivery">
+                  <form id="delivery-form">
+                      <div class="form-group">
+                          <label for="name">Enter Your Full Name</label>
+                          <input type="text" placeholder="Name" id="deliveryName" class="form-control text-input" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="name">Enter Your Home or Office Address</label>
+                          <input type="text" placeholder="Address" id="address" class="form-control text-input" required>
+                      </div>
+                      <button type="submit" class="btn btn-outline-success button2" id="submitDeliveryForm">Submit</button>
+                  </form>
+              </div>
+        </div>
+  </div>
+</div>
+
+
+
+<script src="main.js"></script>
+<script src="css/js/bootstrap.min.js"></script>
+<script src="css/js/jquery-3.5.1.js"></script>
+
 </body>
 </html>
