@@ -129,3 +129,16 @@ h2{
 .order-here{
   text-align: center;
 }
+
+.cartWell, 
+.pickup-delivery, 
+.pickupNow, 
+.deliveryNow, 
+#show-pizza {
+    display: none;
+}
+#modal-body,
+#modalLabel{
+    color:rgb(245, 147, 35);
+}
+
