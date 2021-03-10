@@ -33,7 +33,7 @@ Pizza.prototype.toppingsList = function() {
       return this.toppings.join(", ");
   } else {
     return "None";
-  
+  }
 $(document).ready(function() {
   var total = 0;
   $(".total").text(total);
@@ -120,4 +120,4 @@ $(document).ready(function() {
            myModal.show();
       }
   });
-};
+});
