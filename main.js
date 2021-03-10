@@ -34,6 +34,7 @@ Pizza.prototype.toppingsList = function() {
   } else {
     return "None";
   }
+  
 $(document).ready(function() {
   var total = 0;
   $(".total").text(total);
