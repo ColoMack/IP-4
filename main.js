@@ -77,14 +77,14 @@ $(document).ready(function() {
 
   $("button#pickup").click(function() {
       $(".pickup-delivery").hide();
-      $(".pickupNow").show();
+      $(".pick-up").show();
   });
 
   $("button#button-pickup").click(function(event) {
       event.preventDefault();
-      var userName = $("input#pickupName").val();
+      var userName = $("input#pick-upName").val();
       $(".name-input").text(userName);
-      $("form#pickupForm").hide();
+      $("form#pickup-up-name").hide();
       $(".cart").hide();
       $("form#pizza").hide();
       var myModal = new bootstrap.Modal(document.getElementById('modal'), {backdrop: true});
