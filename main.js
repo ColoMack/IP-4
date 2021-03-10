@@ -85,11 +85,11 @@ $(document).ready(function() {
       $("form#pizza").hide();
       var myModal = new bootstrap.Modal(document.getElementById('modal'), {backdrop: true});
       if (userName){
-          $("#modal-body").html(" Hello " + userName + ", Please pick your order immediately. Thank you for shopping on L'ora della Pizza");
+          $("#modal-body").html(" Hello " + userName + ", you may pick your order");
           $("#modalLabel").html("Your Order has been successfully confirmed.");
           myModal.show();
       } else {
-          $("#modal-body").html("Please enter your name!!");
+          $("#modal-body").html("Please enter your name");
           $("#modalLabel").html("Invalid input!");
            myModal.show();
       }
@@ -120,4 +120,4 @@ $(document).ready(function() {
            myModal.show();
       }
   });
-});
+};
