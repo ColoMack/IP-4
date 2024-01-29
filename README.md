@@ -17,7 +17,7 @@
  ## SET UP INSTRUCTIONS
   Clone the project from github from the link provided on the code.
 
-  Open the coe on your browser.
+  Open the code on your browser.
 
   ## Contact info
   [tedaringo628@gmail.com]
